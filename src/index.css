@@ -144,6 +144,7 @@ Cores profissionais em azul tech que transmitem confiança e expertise
 @layer utilities {
   .gradient-hero {
     background: var(--gradient-hero);
+    background-image: var(--gradient-hero);
   }
   
   .gradient-cta {
