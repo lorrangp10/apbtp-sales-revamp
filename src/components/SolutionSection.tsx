@@ -85,7 +85,7 @@ export const SolutionSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6 bg-background/50 rounded-lg border border-border">
               <div className="text-3xl mb-3">🔗</div>
-              <h4 className="font-semibold mb-2">SAP BTP CPI</h4>
+              <h4 className="font-semibold mb-2 text-foreground">SAP BTP CPI</h4>
               <p className="text-sm text-muted-foreground">
                 Integrações robustas entre sistemas SAP e externos
               </p>
