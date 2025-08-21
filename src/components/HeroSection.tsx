@@ -57,17 +57,12 @@ export const HeroSection = () => {
                 variant="cta" 
                 size="xl" 
                 className="flex-1 sm:flex-none"
-                onClick={() => window.open('https://members.kiwify.com/login?club=405e8962-78c2-4912-a1d4-15f45358c1dc', '_blank')}
+                onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
               >
                 🚀 Acessar com Desconto Exclusivo
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="xl" 
-                className="flex-1 sm:flex-none"
-                onClick={() => window.open('https://www.youtube.com/watch?v=Ek07IX9aAbw', '_blank')}
-              >
+              <Button variant="outline" size="xl" className="flex-1 sm:flex-none">
                 📹 Ver Aula Gratuita
               </Button>
             </div>

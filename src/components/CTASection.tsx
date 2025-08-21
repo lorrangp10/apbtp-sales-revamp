@@ -59,7 +59,7 @@ export const CTASection = () => {
               variant="cta" 
               size="xl"
               className="text-xl px-12 py-6 shadow-2xl transform hover:scale-110"
-              onClick={() => window.open('https://members.kiwify.com/login?club=405e8962-78c2-4912-a1d4-15f45358c1dc', '_blank')}
+              onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
             >
               🔥 QUERO TRANSFORMAR MINHA CARREIRA AGORA
             </Button>
