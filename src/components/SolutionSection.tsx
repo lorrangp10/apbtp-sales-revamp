@@ -121,7 +121,7 @@ export const SolutionSection = () => {
           <Button 
             variant="cta" 
             size="xl"
-            onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
+            onClick={() => window.open('https://members.kiwify.com/login?club=405e8962-78c2-4912-a1d4-15f45358c1dc', '_blank')}
           >
             🔥 Quero Transformar Minha Carreira Agora
           </Button>
