@@ -76,13 +76,24 @@ export const PricingSection = () => {
           </p>
           
           {/* Urgency */}
-          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 max-w-2xl mx-auto mb-12">
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 max-w-2xl mx-auto mb-6">
             <h3 className="text-xl font-bold text-destructive mb-2">
               ⏰ ATENÇÃO: Promoção Válida Por Apenas 48 Horas!
             </h3>
             <p className="text-muted-foreground">
               Após esse período, o valor volta para <strong>R$ 497,00</strong>. 
               Garante já sua vaga com 60% de desconto!
+            </p>
+          </div>
+
+          {/* Cupom adicional */}
+          <div className="bg-success/10 border border-success/30 rounded-lg p-6 max-w-2xl mx-auto mb-12">
+            <h3 className="text-xl font-bold text-success mb-2">
+              🎉 CUPOM ESPECIAL: 30% OFF ADICIONAL!
+            </h3>
+            <p className="text-muted-foreground">
+              Use o cupom que aparece no checkout e pague apenas <strong>R$ 137,90</strong> à vista! 
+              Economia total de mais de R$ 350,00.
             </p>
           </div>
         </div>

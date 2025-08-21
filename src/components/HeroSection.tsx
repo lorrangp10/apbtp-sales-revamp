@@ -46,7 +46,7 @@ export const HeroSection = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li>✅ Dominar SAP BTP CPI do zero ao avançado</li>
                 <li>✅ Criar integrações reais com S/4HANA</li>
-                <li>✅ Aumentar seu salário em até 300%</li>
+                <li>✅ Pode Aumentar seu salário em até 300%</li>
                 <li>✅ Ser disputado pelas melhores empresas</li>
               </ul>
             </div>
