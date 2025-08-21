@@ -43,9 +43,9 @@ export const SolutionSection = () => {
           <Badge variant="outline" className="mb-6 border-success text-success">
             ✅ A Solução Definitiva
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-foreground">
             📚 Guia Definitivo{" "}
-            <span className="text-primary font-bold">
+            <span className="text-blue-500 font-bold">
               Integration Suite
             </span>
           </h2>
