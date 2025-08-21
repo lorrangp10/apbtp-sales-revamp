@@ -45,7 +45,7 @@ export const SolutionSection = () => {
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             📚 Guia Definitivo{" "}
-            <span className="gradient-hero bg-clip-text text-transparent">
+            <span className="text-primary font-bold">
               Integration Suite
             </span>
           </h2>
