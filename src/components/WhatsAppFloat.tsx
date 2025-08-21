@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 
 export const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
+    console.log("WhatsApp button clicked!"); // Debug log
     const phoneNumber = "5531996904401";
     const message = "Olá! Vim através do site do curso SAP BTP CPI. Gostaria de mais informações!";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    console.log("Opening WhatsApp URL:", whatsappURL); // Debug log
     window.open(whatsappURL, '_blank');
   };
 
@@ -12,7 +14,7 @@ export const WhatsAppFloat = () => {
     <div className="fixed bottom-6 right-6 z-50">
       <Button
         onClick={handleWhatsAppClick}
-        className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce hover:animate-none flex items-center justify-center group"
+        className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce hover:animate-none flex items-center justify-center group z-10"
         aria-label="Contatar via WhatsApp"
       >
         <svg
@@ -25,7 +27,7 @@ export const WhatsAppFloat = () => {
       </Button>
       
       {/* Pulse ring animation */}
-      <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping"></div>
+      <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping -z-10 pointer-events-none"></div>
     </div>
   );
 };
