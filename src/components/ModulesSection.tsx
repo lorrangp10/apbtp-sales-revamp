@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import courseModulesImage from "@/assets/course-modules.jpg";
 
 export const ModulesSection = () => {
   const modules = [
@@ -142,14 +141,6 @@ export const ModulesSection = () => {
           </p>
         </div>
 
-        {/* Course overview image */}
-        <div className="mb-16 max-w-4xl mx-auto">
-          <img
-            src={courseModulesImage}
-            alt="Estrutura completa do curso SAP BTP CPI"
-            className="w-full rounded-2xl shadow-2xl"
-          />
-        </div>
 
         {/* Modules grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
