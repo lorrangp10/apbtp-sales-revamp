@@ -62,7 +62,12 @@ export const HeroSection = () => {
                 🚀 Acessar com Desconto Exclusivo
               </Button>
               
-              <Button variant="outline" size="xl" className="flex-1 sm:flex-none">
+              <Button 
+                variant="outline" 
+                size="xl" 
+                className="flex-1 sm:flex-none"
+                onClick={() => window.open('https://www.youtube.com/watch?v=Ek07IX9aAbw', '_blank')}
+              >
                 📹 Ver Aula Gratuita
               </Button>
             </div>
