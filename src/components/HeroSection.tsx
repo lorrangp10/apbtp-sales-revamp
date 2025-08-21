@@ -25,7 +25,7 @@ export const HeroSection = () => {
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Domine{" "}
-                <span className="gradient-hero bg-clip-text text-transparent">
+                <span className="text-primary-glow font-bold">
                   SAP BTP CPI
                 </span>{" "}
                 E Seja O Profissional Que As{" "}
