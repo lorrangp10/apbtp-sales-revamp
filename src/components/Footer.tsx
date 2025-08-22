@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-background border-t border-border py-12 w-full overflow-hidden">
+      <div className="container mx-auto px-4 w-full max-w-full">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">

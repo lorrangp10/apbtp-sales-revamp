@@ -61,8 +61,8 @@ export const PricingSection = () => {
   ];
 
   return (
-    <section id="preco" className="py-20 bg-muted/20">
-      <div className="container mx-auto px-4">
+    <section id="preco" className="py-20 bg-muted/20 w-full overflow-hidden">
+      <div className="container mx-auto px-4 w-full max-w-full">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-6 border-success text-success bg-success/10">
             🔥 Promoção Por Tempo Limitado

@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 
 export const LandingHeader = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border w-full">
+      <div className="container mx-auto px-4 w-full max-w-full">
+        <div className="flex items-center justify-between h-16 w-full">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">D</span>

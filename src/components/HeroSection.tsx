@@ -4,18 +4,18 @@ import heroImage from "@/assets/hero-professional.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden w-full">
       {/* Background gradient */}
       <div className="absolute inset-0 gradient-hero opacity-90" />
       
       {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-glow rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
+      <div className="absolute inset-0 opacity-10 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary-glow rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 relative z-10 w-full max-w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           {/* Content */}
           <div className="space-y-8">
             <Badge variant="secondary" className="bg-success/20 text-success border-success/30">
@@ -100,11 +100,11 @@ export const HeroSection = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full font-bold shadow-lg animate-bounce">
+            <div className="absolute top-2 right-2 md:-top-4 md:-right-4 bg-success text-success-foreground px-2 py-1 md:px-4 md:py-2 rounded-full font-bold shadow-lg animate-bounce text-xs md:text-sm">
               4 Cursos em 1!
             </div>
             
-            <div className="absolute -bottom-4 -left-4 bg-warning text-warning-foreground px-4 py-2 rounded-full font-bold shadow-lg">
+            <div className="absolute bottom-2 left-2 md:-bottom-4 md:-left-4 bg-warning text-warning-foreground px-2 py-1 md:px-4 md:py-2 rounded-full font-bold shadow-lg text-xs md:text-sm">
               100% Prático
             </div>
           </div>

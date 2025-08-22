@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button";
 
 export const CTASection = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden w-full">
       {/* Background gradient */}
       <div className="absolute inset-0 gradient-hero" />
       
       {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-glow rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
+      <div className="absolute inset-0 opacity-20 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-primary-glow rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 md:w-48 md:h-48 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 w-full max-w-full">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-3xl lg:text-6xl font-bold mb-6 leading-tight">
             🚀 Não Deixe Essa Oportunidade Passar!
