@@ -7,9 +7,9 @@ export const LandingHeader = () => {
       <div className="container mx-auto px-4 w-full max-w-full">
         <div className="flex items-center justify-between h-16 w-full">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg overflow-hidden">
-              <img src={Logo} alt="Logo DataFlow" className="w-full h-full object-cover" />
-            </div>
+            <div className="w-16 h-16 rounded-lg overflow-hidden">
+              <img src={Logo} alt="Logo DataFlow" className="w-full h-full object-contain" />
+             </div>
             <div>
               <h2 className="text-lg font-semibold">DataFlow</h2>
               <p className="text-xs text-muted-foreground">Consultoria</p>
