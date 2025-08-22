@@ -18,7 +18,7 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center w-full">
           {/* Content */}
           <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
-            <Badge variant="secondary" className="bg-success/20 text-success border-success/30">
+            <Badge variant="secondary" className="bg-success/20 text-white border-success/30">
               🔥 Mais de 500 alunos já transformaram suas carreiras
             </Badge>
             
@@ -34,7 +34,7 @@ export const HeroSection = () => {
                 </span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
                 Aprenda a integrar o SAP com <strong>Groovy, APIs, WhatsApp, Apps Fiori</strong> e muito mais! 
                 O único curso do mercado com casos reais de integração.
               </p>
