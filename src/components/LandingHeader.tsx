@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Logo from "@/assets/LOGO.png"; // <-- Importa o logo
 
 export const LandingHeader = () => {
   return (
@@ -6,8 +7,8 @@ export const LandingHeader = () => {
       <div className="container mx-auto px-4 w-full max-w-full">
         <div className="flex items-center justify-between h-16 w-full">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
+            <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <img src={Logo} alt="Logo DataFlow" className="w-full h-full object-cover" />
             </div>
             <div>
               <h2 className="text-lg font-semibold">DataFlow</h2>
