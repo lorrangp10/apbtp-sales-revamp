@@ -126,7 +126,7 @@ export const ModulesSection = () => {
   ];
 
   return (
-    <section id="#modulos" className="py-20 bg-muted/20 w-full overflow-hidden">
+    <section id="modulos" className="py-20 bg-muted/20 w-full overflow-hidden">
       <div className="container mx-auto px-3 sm:px-4 w-full max-w-full">
         <div className="text-center mb-12 md:mb-16">
           <Badge variant="outline" className="mb-4 md:mb-6 border-primary text-primary">
