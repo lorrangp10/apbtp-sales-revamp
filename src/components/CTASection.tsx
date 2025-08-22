@@ -70,7 +70,7 @@ export const CTASection = () => {
 
             {/* Risk reversal */}
             <div className="bg-success/20 backdrop-blur-sm border border-success/30 rounded-lg p-4 max-w-md mx-auto mt-8">
-              <div className="text-success font-semibold">
+              <div className="text-white font-semibold">
                 ✅ RISCO ZERO: Se não ficar satisfeito, devolvemos seu dinheiro!
               </div>
             </div>
