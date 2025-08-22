@@ -14,16 +14,16 @@ export const HeroSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 w-full max-w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+      <div className="container mx-auto px-3 sm:px-4 relative z-10 w-full max-w-full">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center w-full">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
             <Badge variant="secondary" className="bg-success/20 text-success border-success/30">
               🔥 Mais de 500 alunos já transformaram suas carreiras
             </Badge>
             
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            <div className="space-y-4 md:space-y-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight break-words">
                 Domine{" "}
                 <span className="text-primary-glow font-bold">
                   SAP BTP CPI
@@ -34,16 +34,16 @@ export const HeroSection = () => {
                 </span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 Aprenda a integrar o SAP com <strong>Groovy, APIs, WhatsApp, Apps Fiori</strong> e muito mais! 
                 O único curso do mercado com casos reais de integração.
               </p>
             </div>
 
             {/* Value proposition */}
-            <div className="bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border shadow-card">
-              <h3 className="text-lg font-semibold mb-3">🎯 O que você vai conquistar:</h3>
-              <ul className="space-y-2 text-muted-foreground">
+            <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-border shadow-card">
+              <h3 className="text-base md:text-lg font-semibold mb-3">🎯 O que você vai conquistar:</h3>
+              <ul className="space-y-2 text-sm md:text-base text-muted-foreground">
                 <li>✅ Dominar SAP BTP CPI do zero ao avançado</li>
                 <li>✅ Criar integrações reais com S/4HANA</li>
                 <li>✅ Pode Aumentar seu salário em até 300%</li>
@@ -52,20 +52,21 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button 
                 variant="cta" 
-                size="xl" 
-                className="flex-1 sm:flex-none"
+                size="lg" 
+                className="w-full sm:w-auto sm:flex-none text-sm md:text-base px-4 md:px-6 py-3 md:py-4 whitespace-nowrap"
                 onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
               >
-                🚀 Acessar com Desconto Exclusivo
+                <span className="hidden sm:inline">🚀 Acessar com Desconto Exclusivo</span>
+                <span className="sm:hidden">🚀 Acesso com Desconto</span>
               </Button>
               
               <Button 
                 variant="outline" 
-                size="xl" 
-                className="flex-1 sm:flex-none"
+                size="lg" 
+                className="w-full sm:w-auto sm:flex-none text-sm md:text-base px-4 md:px-6 py-3 md:py-4"
                 onClick={() => window.open('https://www.youtube.com/watch?v=Ek07IX9aAbw', '_blank')}
               >
                 📹 Ver Aula Gratuita
@@ -73,23 +74,23 @@ export const HeroSection = () => {
             </div>
 
             {/* Social proof */}
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div
                     key={i}
-                    className="w-8 h-8 bg-primary rounded-full border-2 border-background flex items-center justify-center text-xs text-primary-foreground font-bold"
+                    className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full border-2 border-background flex items-center justify-center text-xs text-primary-foreground font-bold"
                   >
                     {i}
                   </div>
                 ))}
               </div>
-              <span>Junte-se a mais de 500 profissionais de sucesso</span>
+              <span className="break-words leading-relaxed">Junte-se a mais de 500 profissionais de sucesso</span>
             </div>
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
+          <div className="relative order-1 lg:order-2 mb-6 lg:mb-0">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={heroImage}

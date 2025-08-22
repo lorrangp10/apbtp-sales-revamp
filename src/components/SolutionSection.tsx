@@ -38,25 +38,25 @@ export const SolutionSection = () => {
 
   return (
     <section id="sobre" className="py-20 w-full overflow-hidden">
-      <div className="container mx-auto px-4 w-full max-w-full">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6 border-success text-success">
+      <div className="container mx-auto px-3 sm:px-4 w-full max-w-full">
+        <div className="text-center mb-12 md:mb-16">
+          <Badge variant="outline" className="mb-4 md:mb-6 border-success text-success">
             ✅ A Solução Definitiva
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 break-words px-2">
             📚 Guia Definitivo{" "}
             <span className="text-primary font-bold">
               Integration Suite
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
             O único curso do mercado que ensina SAP BTP CPI + S/4HANA com casos reais de integração. 
             Transforme sua carreira em 30 dias!
           </p>
           
-          <div className="inline-flex items-center gap-2 bg-success/20 text-success px-6 py-3 rounded-full border border-success/30">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 bg-success/20 text-success px-4 sm:px-6 py-3 rounded-full border border-success/30 mx-4 text-sm sm:text-base">
             <span className="font-semibold">🎉 Promoção Exclusiva:</span>
-            <span>4 cursos completos por apenas R$ 197,00!</span>
+            <span className="text-center">4 cursos completos por apenas R$ 197,00!</span>
           </div>
         </div>
 
@@ -117,15 +117,17 @@ export const SolutionSection = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <Button 
             variant="cta" 
-            size="xl"
+            size="lg"
+            className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-sm md:text-base"
             onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
           >
-            🔥 Quero Transformar Minha Carreira Agora
+            <span className="hidden sm:inline">🔥 Quero Transformar Minha Carreira Agora</span>
+            <span className="sm:hidden">🔥 Transformar Carreira</span>
           </Button>
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-xs md:text-sm text-muted-foreground mt-3 md:mt-4 px-4">
             ⚡ Acesso imediato • 💳 Parcelamento em até 12x • 🔒 Compra 100% segura
           </p>
         </div>

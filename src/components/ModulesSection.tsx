@@ -127,15 +127,15 @@ export const ModulesSection = () => {
 
   return (
     <section className="py-20 bg-muted/20 w-full overflow-hidden">
-      <div className="container mx-auto px-4 w-full max-w-full">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6 border-primary text-primary">
+      <div className="container mx-auto px-3 sm:px-4 w-full max-w-full">
+        <div className="text-center mb-12 md:mb-16">
+          <Badge variant="outline" className="mb-4 md:mb-6 border-primary text-primary">
             📚 Conteúdo Completo
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 break-words px-2">
             🎯 Estrutura Completa do Curso
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             20 módulos práticos que vão te levar do zero ao especialista em SAP BTP CPI. 
             Cada módulo foi cuidadosamente estruturado para maximizar seu aprendizado.
           </p>

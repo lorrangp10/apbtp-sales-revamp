@@ -62,36 +62,36 @@ export const PricingSection = () => {
 
   return (
     <section id="preco" className="py-20 bg-muted/20 w-full overflow-hidden">
-      <div className="container mx-auto px-4 w-full max-w-full">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6 border-success text-success bg-success/10">
+      <div className="container mx-auto px-3 sm:px-4 w-full max-w-full">
+        <div className="text-center mb-12 md:mb-16">
+          <Badge variant="outline" className="mb-4 md:mb-6 border-success text-success bg-success/10">
             🔥 Promoção Por Tempo Limitado
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 break-words px-2">
             💰 Acesse o Conteúdo Completo{" "}
             <span className="text-success">Com as Melhores Condições</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
             Investimento que se paga na primeira oportunidade! Consultores SAP BTP CPI ganham de R$ 8.000 a R$ 15.000 por mês.
           </p>
           
           {/* Urgency */}
-          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 max-w-2xl mx-auto mb-6">
-            <h3 className="text-xl font-bold text-destructive mb-2">
+          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4 md:p-6 max-w-2xl mx-auto mb-4 md:mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-destructive mb-2">
               ⏰ ATENÇÃO: Promoção Válida Por Apenas 48 Horas!
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-sm md:text-base">
               Após esse período, o valor volta para <strong>R$ 497,00</strong>. 
               Garante já sua vaga com 60% de desconto!
             </p>
           </div>
 
           {/* Cupom adicional */}
-          <div className="bg-success/10 border border-success/30 rounded-lg p-6 max-w-2xl mx-auto mb-12">
-            <h3 className="text-xl font-bold text-success mb-2">
+          <div className="bg-success/10 border border-success/30 rounded-lg p-4 md:p-6 max-w-2xl mx-auto mb-8 md:mb-12">
+            <h3 className="text-lg sm:text-xl font-bold text-success mb-2">
               🎉 CUPOM ESPECIAL: 30% OFF ADICIONAL!
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-sm md:text-base">
               Use o cupom que aparece no checkout e pague apenas <strong>R$ 137,90</strong> à vista! 
               Economia total de mais de R$ 350,00.
             </p>
@@ -119,17 +119,17 @@ export const PricingSection = () => {
                   <Badge variant="outline" className="mb-4 border-primary text-primary">
                     {option.discount}
                   </Badge>
-                  <CardTitle className="text-2xl mb-2">{option.title}</CardTitle>
-                  <p className="text-muted-foreground mb-4">{option.subtitle}</p>
-                  
-                  <div className="space-y-2">
-                    <div className="text-sm text-muted-foreground line-through">
-                      De: {option.originalPrice}
-                    </div>
-                    <div className="text-4xl font-bold text-success">
-                      {option.price}
-                    </div>
-                  </div>
+                   <CardTitle className="text-lg sm:text-xl md:text-2xl mb-2 break-words">{option.title}</CardTitle>
+                   <p className="text-muted-foreground mb-4 text-sm md:text-base">{option.subtitle}</p>
+                   
+                   <div className="space-y-2">
+                     <div className="text-xs sm:text-sm text-muted-foreground line-through">
+                       De: {option.originalPrice}
+                     </div>
+                     <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-success break-words">
+                       {option.price}
+                     </div>
+                   </div>
                 </div>
               </CardHeader>
               
@@ -146,10 +146,10 @@ export const PricingSection = () => {
                 <Button 
                   variant={option.highlight ? "cta" : "hero"}
                   size="lg" 
-                  className="w-full"
+                  className="w-full text-sm md:text-base px-4 py-3 break-words"
                   onClick={() => window.open('https://pay.kiwify.com.br/Ve66GBT', '_blank')}
                 >
-                  {option.buttonText}
+                  <span className="text-center">{option.buttonText}</span>
                 </Button>
               </CardContent>
             </Card>
