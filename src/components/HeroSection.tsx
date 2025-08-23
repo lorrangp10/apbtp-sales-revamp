@@ -1,15 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-professional.jpg";
+import techBackground from "@/assets/tech-background.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden w-full">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-hero opacity-90" />
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${techBackground})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-accent/70" />
       
       {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-10 overflow-hidden">
+      <div className="absolute inset-0 opacity-5 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary-glow rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent rounded-full blur-2xl animate-pulse delay-1000" />
       </div>
@@ -23,18 +28,18 @@ export const HeroSection = () => {
             </Badge>
             
             <div className="space-y-4 md:space-y-6">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight break-words">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight break-words text-white drop-shadow-lg">
                 Domine{" "}
-                <span className="text-primary-glow font-bold">
+                <span className="text-primary-glow font-bold drop-shadow-lg">
                   SAP BTP CPI
                 </span>{" "}
                 E Seja O Profissional Que As{" "}
-                <span className="text-primary-glow">
+                <span className="text-primary-glow drop-shadow-lg">
                   Grandes Empresas Disputam!
                 </span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md">
                 Aprenda a integrar o SAP com <strong>Groovy, APIs, WhatsApp, Apps Fiori</strong> e muito mais! 
                 O único curso do mercado com casos reais de integração.
               </p>
