@@ -22,7 +22,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-3 sm:px-4 relative z-10 w-full max-w-full">
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center w-full">
           {/* Content */}
-          <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
+          <div className="space-y-6 md:space-y-8">
             <Badge variant="secondary" className="bg-success/20 text-white border-success/30">
               🔥 Mais de 500 alunos já transformaram suas carreiras
             </Badge>
@@ -95,7 +95,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative order-1 lg:order-2 mb-6 lg:mb-0">
+          <div className="relative hidden lg:block">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={heroImage}
