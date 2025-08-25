@@ -1,7 +1,23 @@
 import { Button } from "@/components/ui/button";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import { useState } from "react";
 import Logo from "@/assets/LOGO.png"; // <-- Importa o logo
 
 export const LandingHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuItems = [
+    { href: "#sobre", label: "Sobre o Curso" },
+    { href: "#modulos", label: "Módulos" },
+    { href: "#depoimentos", label: "Depoimentos" },
+    { href: "#preco", label: "Preços" },
+  ];
+
+  const handleMenuClick = (href: string) => {
+    setIsOpen(false);
+    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border w-full">
       <div className="container mx-auto px-4 w-full max-w-full">
@@ -40,11 +56,39 @@ export const LandingHeader = () => {
             Acessar Agora
           </Button>
 
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </Button>
+          <Drawer open={isOpen} onOpenChange={setIsOpen}>
+            <DrawerTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="z-[100]">
+              <div className="flex flex-col gap-4 p-6">
+                {menuItems.map((item) => (
+                  <button
+                    key={item.href}
+                    onClick={() => handleMenuClick(item.href)}
+                    className="text-left text-lg py-3 hover:text-primary transition-fast border-b border-border/50 last:border-b-0"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  className="mt-4"
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.open('https://members.kiwify.com/login?club=405e8962-78c2-4912-a1d4-15f45358c1dc', '_blank');
+                  }}
+                >
+                  Acessar Agora
+                </Button>
+              </div>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
     </header>
