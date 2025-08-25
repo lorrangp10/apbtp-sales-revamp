@@ -5,7 +5,7 @@ import techBackground from "@/assets/tech-background.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden w-full">
+    <section className="relative min-h-screen flex items-center overflow-hidden w-full pt-20 sm:pt-16 lg:pt-0">
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
